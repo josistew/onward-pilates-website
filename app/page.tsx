@@ -5,7 +5,6 @@ import { HeroSection } from "@/components/home/hero-section"
 import { ServicesPreview } from "@/components/home/services-preview"
 import { PhilosophySection } from "@/components/home/philosophy-section"
 import { QuizSection } from "@/components/home/quiz-section"
-import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { CTASection } from "@/components/home/cta-section"
 
 export default function Page() {
@@ -16,7 +15,6 @@ export default function Page() {
       <ServicesPreview />
       <PhilosophySection />
       <QuizSection />
-      <TestimonialsSection />
       <CTASection />
       <Footer />
       <FloatingCTA />
