@@ -9,11 +9,14 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <img
-              src="/images/logo-icon.png"
-              alt="Onward PT"
-              className="h-12 w-12 brightness-0 invert"
-            />
+            <div className="flex flex-col items-start gap-1.5">
+              <span className="font-serif text-2xl font-thin tracking-[0.35em] text-primary-foreground">
+                ONWARD
+              </span>
+              <span className="font-sans text-[7px] font-light tracking-[0.35em] text-primary-foreground/80">
+                PHYSICAL THERAPY & PILATES
+              </span>
+            </div>
             <p className="text-sm italic text-primary-foreground/60">
               Helping you move forward, one session at a time.
             </p>

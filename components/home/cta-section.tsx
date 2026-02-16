@@ -22,6 +22,11 @@ export function CTASection() {
         >
           LET'S GET MOVING!
         </a>
+        <img
+          src="/images/logo-icon.png"
+          alt="Onward PT & Pilates"
+          className="mt-12 h-24 w-auto opacity-30"
+        />
       </div>
     </section>
   )
