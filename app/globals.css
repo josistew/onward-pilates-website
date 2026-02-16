@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Canela';
+  src: url('/fonts/Canela-Thin.woff2') format('woff2'),
+       url('/fonts/Canela-Thin.woff') format('woff'),
+       url('/fonts/Canela-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('/fonts/Canela-ThinItalic.woff2') format('woff2'),
+       url('/fonts/Canela-ThinItalic.woff') format('woff'),
+       url('/fonts/Canela-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Onward PT Brand Colors */
+    /* Deep Navy: #13273F | Dusty Blue: #BFCED7 | Olive: #D4CD5E | Blush: #E5D0CF | Taupe: #948277 | Cream: #F5F2EC */
+    --background: 37 33% 94%;       /* Cream #F5F2EC */
+    --foreground: 213 52% 16%;      /* Deep Navy #13273F */
+    --card: 37 33% 97%;             /* Slightly lighter cream */
+    --card-foreground: 213 52% 16%;
+    --popover: 37 33% 97%;
+    --popover-foreground: 213 52% 16%;
+    --primary: 213 52% 16%;         /* Deep Navy #13273F */
+    --primary-foreground: 37 33% 94%; /* Cream */
+    --secondary: 204 22% 80%;       /* Dusty Blue #BFCED7 */
+    --secondary-foreground: 213 52% 16%;
+    --muted: 13 27% 85%;            /* Blush Pink #E5D0CF */
+    --muted-foreground: 18 14% 53%; /* Warm Taupe #948277 */
+    --accent: 55 58% 60%;           /* Olive/Chartreuse #D4CD5E */
+    --accent-foreground: 213 52% 16%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 204 22% 85%;
+    --input: 204 22% 85%;
+    --ring: 213 52% 16%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
