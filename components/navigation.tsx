@@ -37,7 +37,7 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex flex-col items-center gap-1">
+        <Link href="/" className="flex flex-col items-center gap-0.5">
           <span className={`font-serif text-3xl tracking-[0.05em] ${textColor} lg:text-4xl`} style={{ fontWeight: 50 }}>
             ONWARD
           </span>
