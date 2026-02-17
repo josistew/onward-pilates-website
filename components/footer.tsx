@@ -10,10 +10,10 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex flex-col items-start gap-0">
-              <span className="font-serif text-2xl font-thin tracking-[0.15em] text-primary-foreground">
+              <span className="font-serif text-2xl tracking-[0.05em] text-primary-foreground" style={{ fontWeight: 100 }}>
                 ONWARD
               </span>
-              <span className="font-sans text-[7px] font-light tracking-[0.2em] text-primary-foreground/80">
+              <span className="font-sans text-[7px] font-normal tracking-[0.15em] text-primary-foreground">
                 PHYSICAL THERAPY & PILATES
               </span>
             </div>
