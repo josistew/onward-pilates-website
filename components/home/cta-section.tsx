@@ -25,7 +25,7 @@ export function CTASection() {
         <img
           src="/images/logo-icon.png"
           alt="Onward PT & Pilates"
-          className="mt-12 h-24 w-auto opacity-30"
+          className="mt-12 h-42 w-auto"
         />
       </div>
     </section>
