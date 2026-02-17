@@ -27,7 +27,7 @@ export function HeroSection() {
             LET'S GET MOVING!
           </a>
           <Link
-            href="/services"
+            href="#services"
             className="rounded-full border-2 border-[#BFCED7] px-8 py-3.5 text-sm font-semibold tracking-[0.2em] text-[#F5F2EC] transition-all hover:bg-[#BFCED7]/10"
           >
             OUR SERVICES

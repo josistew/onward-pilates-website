@@ -7,8 +7,8 @@ import { JANE_APP_URL } from "@/lib/constants"
 
 const navLinks = [
   { href: "/", label: "HOME" },
-  { href: "/services", label: "SERVICES" },
-  { href: "/about", label: "ABOUT" },
+  { href: "/#services", label: "SERVICES" },
+  { href: "/#about", label: "ABOUT" },
   { href: "/contact", label: "CONTACT" },
 ]
 

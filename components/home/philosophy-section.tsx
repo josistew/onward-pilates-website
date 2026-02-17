@@ -29,7 +29,7 @@ export function PhilosophySection() {
               Every session is fully one-on-one, tailored to your goals, and designed to get you where you want to be, whether that is recovering from an injury, building strength, or moving with more confidence.
             </p>
             <Link
-              href="/about"
+              href="#about"
               className="mt-2 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary transition-colors hover:text-muted-foreground"
             >
               MEET CHANNING
