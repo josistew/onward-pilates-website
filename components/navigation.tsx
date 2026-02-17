@@ -38,10 +38,10 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex flex-col items-center gap-0.5">
-          <span className={`font-serif text-3xl font-thin tracking-[0.15em] ${textColor} lg:text-4xl`}>
+          <span className={`font-serif text-3xl font-thin tracking-[0.05em] ${textColor} lg:text-4xl`}>
             ONWARD
           </span>
-          <span className={`font-sans text-[7px] font-light tracking-[0.2em] ${subtextColor} lg:text-[8px]`}>
+          <span className={`font-sans text-[7px] font-light tracking-[0.15em] ${textColor} lg:text-[8px]`}>
             PHYSICAL THERAPY & PILATES
           </span>
         </Link>
