@@ -13,11 +13,7 @@ export function HeroSection() {
         <p className="mt-3 font-serif text-xl italic text-[#BFCED7] md:text-2xl">
           Restoration through Movement
         </p>
-        <img
-          src="/images/logo-icon.png"
-          alt=""
-          className="mt-6 h-20 w-auto"
-        />
+        <div className="mt-6 h-px w-24 bg-[#D4CD5E]" />
         <p className="mt-8 max-w-lg text-base leading-relaxed tracking-wide text-[#BFCED7] md:text-lg">
           Personalized one-on-one physical therapy and Clinical Pilates in Lubbock, TX. Expert care designed to help you heal, strengthen, and move with confidence.
         </p>
@@ -37,6 +33,11 @@ export function HeroSection() {
             OUR SERVICES
           </Link>
         </div>
+        <img
+          src="/images/logo-icon.png"
+          alt=""
+          className="mt-10 h-20 w-auto"
+        />
       </div>
     </section>
   )
