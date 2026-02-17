@@ -41,7 +41,7 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
           <span className={`font-serif text-3xl tracking-[0.05em] ${textColor} lg:text-4xl`} style={{ fontWeight: 50 }}>
             ONWARD
           </span>
-          <span className={`h-px w-full ${lineColor}`} />
+          <span className={`h-px w-3/4 ${lineColor}`} />
           <span className={`font-sans text-[7px] font-medium tracking-[0.15em] ${textColor} lg:text-[8px]`}>
             PHYSICAL THERAPY & PILATES
           </span>
