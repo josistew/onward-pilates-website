@@ -42,7 +42,7 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
             ONWARD
           </span>
           <span className={`h-px w-3/4 ${lineColor}`} />
-          <span className={`font-sans text-[7px] font-medium tracking-[0.15em] ${textColor} lg:text-[8px]`}>
+          <span className={`mt-1 font-sans text-[7px] font-medium tracking-[0.15em] ${textColor} lg:text-[8px]`}>
             PHYSICAL THERAPY & PILATES
           </span>
         </Link>
