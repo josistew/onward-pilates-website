@@ -33,11 +33,6 @@ export function HeroSection() {
             OUR SERVICES
           </Link>
         </div>
-        <img
-          src="/images/logo-icon.png"
-          alt=""
-          className="mt-10 h-20 w-auto"
-        />
       </div>
     </section>
   )
