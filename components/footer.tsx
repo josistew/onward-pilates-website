@@ -9,11 +9,11 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col items-start gap-1.5">
-              <span className="font-serif text-2xl font-thin tracking-[0.35em] text-primary-foreground">
+            <div className="flex flex-col items-start gap-0">
+              <span className="font-serif text-2xl font-thin tracking-[0.15em] text-primary-foreground">
                 ONWARD
               </span>
-              <span className="font-sans text-[7px] font-light tracking-[0.35em] text-primary-foreground/80">
+              <span className="font-sans text-[7px] font-light tracking-[0.2em] text-primary-foreground/80">
                 PHYSICAL THERAPY & PILATES
               </span>
             </div>
