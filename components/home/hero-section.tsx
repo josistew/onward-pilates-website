@@ -6,18 +6,18 @@ export function HeroSection() {
     <section className="relative flex min-h-[75vh] items-center bg-[#13273F]">
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 py-32 text-center lg:px-8">
-        <img
-          src="/images/logo-icon.png"
-          alt=""
-          className="mb-6 h-16 w-auto opacity-40"
-        />
+        <div className="mb-6 h-px w-16 bg-[#D4CD5E]" />
         <h1 className="font-serif text-5xl font-normal leading-tight tracking-wide text-[#F5F2EC] md:text-7xl lg:text-8xl">
           Move Onward
         </h1>
         <p className="mt-3 font-serif text-xl italic text-[#BFCED7] md:text-2xl">
           Restoration through Movement
         </p>
-        <div className="mt-6 h-px w-24 bg-[#D4CD5E]" />
+        <img
+          src="/images/logo-icon.png"
+          alt=""
+          className="mt-6 h-20 w-auto"
+        />
         <p className="mt-8 max-w-lg text-base leading-relaxed tracking-wide text-[#BFCED7] md:text-lg">
           Personalized one-on-one physical therapy and Clinical Pilates in Lubbock, TX. Expert care designed to help you heal, strengthen, and move with confidence.
         </p>
