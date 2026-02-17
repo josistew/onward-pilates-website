@@ -2,7 +2,7 @@ import { JANE_APP_URL } from "@/lib/constants"
 
 export function CTASection() {
   return (
-    <section className="bg-primary py-24 lg:py-32">
+    <section className="bg-primary py-16 lg:py-24">
       <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center lg:px-8">
         <p className="text-xs font-semibold tracking-[0.3em] text-primary-foreground/60">
           READY TO BEGIN?
@@ -25,7 +25,7 @@ export function CTASection() {
         <img
           src="/images/logo-icon.png"
           alt="Onward PT & Pilates"
-          className="mt-12 h-32 w-auto"
+          className="mt-10 h-40 w-auto"
         />
       </div>
     </section>
