@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import { JANE_APP_URL } from "@/lib/constants"
 import { useEffect, useState, useRef } from "react"
 
@@ -107,20 +106,7 @@ export function HeroSection() {
               <span className="relative z-10">LET'S GET MOVING</span>
               <div className="absolute inset-0 bg-[#1d3654] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </a>
-            <Link
-              href="#how-it-works"
-              className="group flex items-center gap-2 px-2 py-4 text-[11px] font-semibold tracking-[0.15em] text-[#13273F] transition-colors duration-300 hover:text-[#948277]"
-            >
-              <span>HOW IT WORKS</span>
-              <svg 
-                className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+
           </div>
 
           {/* Credentials badge */}
