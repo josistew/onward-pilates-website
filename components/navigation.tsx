@@ -26,28 +26,27 @@ export function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || isOpen
-          ? "bg-[#13273F]/95 shadow-md backdrop-blur-sm"
-          : "bg-[#F5F2EC]/80 backdrop-blur-sm"
+        scrolled
+          ? "bg-[#F5F2EC] shadow-md"
+          : "bg-[#F5F2EC]"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-3">
           <Image
-            src={scrolled || isOpen ? "/images/logo-pill-white.png" : "/images/logo-pill-navy.png"}
-            alt="Onward PT & Pilates"
-            width={32}
+            src="/images/logo-icon-cream.png"
+            alt=""
+            width={40}
             height={48}
-            className="h-[38px] w-auto lg:h-[42px]"
+            className="h-[36px] w-auto lg:h-[42px]"
           />
-          <div className="flex flex-col items-start">
-            <span className={`font-serif text-lg tracking-[0.06em] lg:text-xl transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`}>
-              ONWARD
-            </span>
-            <span className={`font-sans text-[6px] font-medium tracking-[0.12em] lg:text-[7px] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70" : "text-[#13273F]/60"}`}>
-              PHYSICAL THERAPY & PILATES
-            </span>
-          </div>
+          <Image
+            src="/images/logo-wordmark-cream.png"
+            alt="Onward Physical Therapy & Pilates"
+            width={160}
+            height={48}
+            className="h-[36px] w-auto lg:h-[42px]"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -56,7 +55,7 @@ export function Navigation() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-xs font-semibold tracking-[0.2em] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70 hover:text-[#F5F2EC]" : "text-[#13273F]/60 hover:text-[#13273F]"}`}
+              className="text-xs font-semibold tracking-[0.2em] text-[#13273F]/60 transition-colors duration-300 hover:text-[#13273F]"
             >
               {link.label}
             </Link>
@@ -74,7 +73,7 @@ export function Navigation() {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className={`md:hidden transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`}
+          className="text-[#13273F] md:hidden"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
