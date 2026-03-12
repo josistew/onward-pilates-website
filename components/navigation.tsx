@@ -31,23 +31,22 @@ export function Navigation() {
           : "bg-[#F5F2EC]/80 backdrop-blur-sm"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8 lg:py-5">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8 lg:py-4">
         <Link href="/" className="flex items-center gap-3 lg:gap-4">
           <Image
             src={scrolled || isOpen ? "/images/logo-pill-white.png" : "/images/logo-pill-navy.png"}
-            alt="Onward PT & Pilates"
-            width={48}
-            height={72}
-            className="h-[52px] w-auto lg:h-[60px]"
+            alt=""
+            width={36}
+            height={54}
+            className="h-[44px] w-auto lg:h-[50px]"
           />
-          <div className="flex flex-col items-start">
-            <span className={`font-serif text-2xl tracking-[0.04em] lg:text-3xl transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`}>
-              ONWARD
-            </span>
-            <span className={`font-sans text-[8px] font-medium tracking-[0.12em] lg:text-[9px] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70" : "text-[#13273F]/60"}`}>
-              PHYSICAL THERAPY & PILATES
-            </span>
-          </div>
+          <Image
+            src={scrolled || isOpen ? "/images/logo-header-white.png" : "/images/logo-header-navy.png"}
+            alt="Onward Physical Therapy & Pilates"
+            width={180}
+            height={50}
+            className="h-[36px] w-auto lg:h-[44px]"
+          />
         </Link>
 
         {/* Desktop Navigation */}

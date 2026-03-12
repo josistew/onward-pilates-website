@@ -39,7 +39,7 @@ export function HeroSection() {
       </div>
 
       {/* Main content wrapper */}
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1800px] flex-col px-6 pt-24 pb-16 md:px-10 md:pt-28 lg:flex-row lg:items-stretch lg:gap-0 lg:px-0 lg:pt-0 lg:pb-0">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1800px] flex-col px-6 pt-32 pb-16 md:px-10 md:pt-36 lg:flex-row lg:items-stretch lg:gap-0 lg:px-0 lg:pt-0 lg:pb-0">
         
         {/* Left column - Typography & Content */}
         <div className="flex flex-col justify-center lg:w-[55%] lg:py-32 lg:pl-[8%] lg:pr-16 xl:pr-24">
@@ -185,28 +185,7 @@ export function HeroSection() {
               <div className="h-24 w-1 bg-[#D4CD5E]" />
             </div>
 
-            {/* Bottom detail card with logo */}
-            <div 
-              className={`absolute -bottom-6 left-6 z-10 flex items-center gap-4 bg-[#13273F] p-5 md:left-0 lg:-left-16 lg:bottom-24 transition-all duration-700 delay-900 ${
-                loaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
-              }`}
-            >
-              <Image
-                src="/images/logo-pill-white.png"
-                alt=""
-                width={40}
-                height={60}
-                className="h-12 w-auto opacity-80"
-              />
-              <div>
-                <p className="text-[9px] font-semibold tracking-[0.3em] text-[#D4CD5E]">
-                  ONE-ON-ONE
-                </p>
-                <p className="mt-0.5 font-serif text-lg tracking-tight text-[#F5F2EC]">
-                  Care
-                </p>
-              </div>
-            </div>
+
 
             {/* Geometric accent */}
             <div 
