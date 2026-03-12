@@ -113,8 +113,8 @@ export function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-square overflow-hidden rounded-xl">
                 <Image
-                  src="/images/stability-chair.jpg"
-                  alt="Merrithew Stability Chair"
+                  src="/images/breathing-exercise.jpg"
+                  alt="Breathing and posture awareness exercise"
                   fill
                   className="object-cover"
                   quality={80}
