@@ -167,7 +167,7 @@ export function HeroSection() {
                   src="/images/channing-hero.jpg"
                   alt="Channing Stewart, Doctor of Physical Therapy, with Pilates equipment in her Lubbock studio"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[center_15%] scale-125"
                   priority
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />
