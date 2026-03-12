@@ -48,7 +48,7 @@ const services = [
     image: "/images/reformer-session.jpg",
     imageAlt: "Clinical Pilates session on the Reformer",
     color: "bg-[#E5D0CF]",
-    buttonText: "BOOK A CLINICAL PILATES",
+    buttonText: "BOOK CLINICAL PILATES",
   },
 ]
 
@@ -135,7 +135,7 @@ export function ServicesDetail() {
                     href={JANE_APP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-[#13273F] px-6 py-3.5 text-[11px] font-semibold tracking-[0.15em] text-[#F5F2EC] transition-all hover:bg-[#1d3654] hover:shadow-md"
+                    className="inline-block bg-[#13273F] px-7 py-4 text-xs font-semibold tracking-[0.15em] text-[#F5F2EC] transition-all hover:bg-[#1d3654] hover:shadow-md"
                   >
                     {service.buttonText}
                   </a>
