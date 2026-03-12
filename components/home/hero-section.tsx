@@ -91,11 +91,6 @@ export function HeroSection() {
               <p className="text-[11px] font-semibold tracking-[0.25em] text-[#D4CD5E]">
                 PHYSICAL THERAPY & CLINICAL PILATES
               </p>
-              <p className="mt-4 hidden max-w-md text-[1rem] leading-[1.8] text-[#5A6B7A] md:block md:text-[1.05rem]">
-                One-on-one care that uses Clinical Pilates as a treatment tool. 
-                Not a class — a personalized plan to help you heal, strengthen, 
-                and move with confidence.
-              </p>
             </div>
           </div>
 
