@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { ArrowRight } from "lucide-react"
 import { JANE_APP_URL } from "@/lib/constants"
 
 const services = [
@@ -7,7 +6,7 @@ const services = [
     title: "Physical Therapy",
     subtitle: "ONE-ON-ONE | CASH-BASED | NO REFERRAL NEEDED",
     description:
-      "Every patient starts here. Your first session is a comprehensive physical therapy evaluation — Channing will assess how you move, identify what's causing your pain or limitations, and build a treatment plan around your specific goals. This is not a group class or a generic stretching session.",
+      "Every patient starts here. Your first session is a comprehensive physical therapy evaluation. Channing will assess how you move, identify what's causing your pain or limitations, and build a treatment plan around your specific goals. This is not a group class or a generic stretching session.",
     details: [
       "Full movement assessment & evaluation",
       "Manual therapy & hands-on treatment",
@@ -26,13 +25,15 @@ const services = [
     image: "/images/pt-resistance-band.jpg",
     imageAlt: "Physical therapy session with resistance band",
     color: "bg-[#BFCED7]",
+    buttonText: "BOOK PHYSICAL THERAPY",
   },
   {
     title: "Clinical Pilates",
-    subtitle: "PRIVATE SESSIONS | STOTT PILATES (MERRITHEW)",
+    subtitle: "PRIVATE SESSIONS | STOTT PILATES",
     description:
-      "Once you've been evaluated and cleared, or if you're looking for guided strength and movement work without a medical concern, Clinical Pilates sessions are available as standalone private sessions. These are still one-on-one with Channing — not a group class.",
+      "Pilates sessions are available for those that don't need Physical Therapy services. Channing will start with a full body assessment, then craft a personalized movement plan tailored for your needs.",
     details: [
+      "Posture analysis",
       "Private Reformer-based sessions",
       "Customized to your level, body, and goals",
       "Core strength, alignment, and functional movement",
@@ -48,6 +49,7 @@ const services = [
     image: "/images/reformer-session.jpg",
     imageAlt: "Clinical Pilates session on the Reformer",
     color: "bg-[#E5D0CF]",
+    buttonText: "BOOK CLINICAL PILATES",
   },
 ]
 
@@ -64,7 +66,7 @@ export function ServicesDetail() {
           </h2>
           <div className="mt-4 h-px w-16 bg-accent" />
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Every session is one-on-one with Channing — a licensed Doctor of Physical Therapy.
+            Every session is one-on-one with Channing, a licensed Doctor of Physical Therapy.
             No aides, no group classes, no rushing.
           </p>
         </div>
@@ -129,15 +131,16 @@ export function ServicesDetail() {
                   </ul>
                 </div>
 
-                <a
-                  href={JANE_APP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary transition-colors hover:text-muted-foreground"
-                >
-                  BOOK NOW
-                  <ArrowRight className="h-3 w-3" />
-                </a>
+                <div className="mt-4">
+                  <a
+                    href={JANE_APP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#13273F] px-7 py-4 text-xs font-semibold tracking-[0.15em] text-[#F5F2EC] transition-all hover:bg-[#1d3654] hover:shadow-md"
+                  >
+                    {service.buttonText}
+                  </a>
+                </div>
               </div>
             </div>
           ))}
