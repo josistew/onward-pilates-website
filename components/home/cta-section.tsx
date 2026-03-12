@@ -10,7 +10,7 @@ export function CTASection() {
           src="/images/cta-pilates-exercise.jpg"
           alt=""
           fill
-          className="object-cover object-center"
+          className="object-contain object-center lg:object-cover lg:object-[center_30%]"
           quality={50}
         />
       </div>
