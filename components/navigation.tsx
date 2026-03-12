@@ -32,21 +32,23 @@ export function Navigation() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
-        <Link href="/" className="flex items-center gap-[10px]">
-          <Image
-            src="/logo-mark.png"
-            alt=""
-            width={44}
-            height={44}
-            className="h-[44px] w-auto"
-          />
-          <Image
-            src="/logo-wordmark.png"
-            alt="Onward Physical Therapy & Pilates"
-            width={100}
-            height={28}
-            className="h-[28px] w-auto"
-          />
+        <Link href="/">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <Image
+              src="/logo-mark.png"
+              alt=""
+              width={44}
+              height={44}
+              style={{ height: '44px', width: 'auto', display: 'block' }}
+            />
+            <Image
+              src="/logo-wordmark.png"
+              alt="Onward Physical Therapy & Pilates"
+              width={100}
+              height={32}
+              style={{ height: '32px', width: 'auto', display: 'block' }}
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
