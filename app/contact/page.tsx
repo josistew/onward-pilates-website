@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { FloatingCTA } from "@/components/floating-cta"
 import { ContactForm } from "@/components/contact/contact-form"
 import { Mail, Phone, Instagram } from "lucide-react"
 import { CONTACT_INFO, JANE_APP_URL, INSTAGRAM_URL } from "@/lib/constants"
@@ -139,7 +138,6 @@ export default function ContactPage() {
       </section>
 
       <Footer />
-      <FloatingCTA />
     </main>
   )
 }

@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { FloatingCTA } from "@/components/floating-cta"
 import { JANE_APP_URL } from "@/lib/constants"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
@@ -158,7 +157,6 @@ export default function ServicesPage() {
       </section>
 
       <Footer />
-      <FloatingCTA />
     </main>
   )
 }

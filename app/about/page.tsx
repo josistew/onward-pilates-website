@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { FloatingCTA } from "@/components/floating-cta"
 import { JANE_APP_URL } from "@/lib/constants"
 import type { Metadata } from "next"
 
@@ -198,7 +197,6 @@ export default function AboutPage() {
       </section>
 
       <Footer />
-      <FloatingCTA />
     </main>
   )
 }

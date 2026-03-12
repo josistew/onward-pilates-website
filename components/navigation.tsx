@@ -37,16 +37,16 @@ export function Navigation() {
             <Image
               src="/logo-mark.png"
               alt=""
-              height={44}
-              width={44}
-              style={{ height: '44px', width: 'auto', display: 'block' }}
+              height={40}
+              width={40}
+              style={{ height: '40px', width: 'auto', display: 'block' }}
             />
             <Image
               src="/logo-wordmark.png"
               alt="Onward Physical Therapy & Pilates"
-              height={32}
+              height={20}
               width={150}
-              style={{ height: '32px', width: 'auto', display: 'block' }}
+              style={{ height: '20px', width: 'auto', display: 'block' }}
             />
           </div>
         </Link>

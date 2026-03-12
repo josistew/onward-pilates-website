@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { FloatingCTA } from "@/components/floating-cta"
 import { HeroSection } from "@/components/home/hero-section"
 import { ServicesDetail } from "@/components/home/services-detail"
 import { PhilosophySection } from "@/components/home/philosophy-section"
@@ -19,7 +18,6 @@ export default function Page() {
       <QuizSection />
       <CTASection />
       <Footer />
-      <FloatingCTA />
     </main>
   )
 }
