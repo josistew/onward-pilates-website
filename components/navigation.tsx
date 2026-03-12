@@ -32,20 +32,20 @@ export function Navigation() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-[10px]">
           <Image
-            src="/images/logo-icon-cream.png"
+            src="/logo-mark.png"
             alt=""
-            width={40}
-            height={48}
-            className="h-[36px] w-auto lg:h-[42px]"
+            width={44}
+            height={44}
+            className="h-[44px] w-auto"
           />
           <Image
-            src="/images/logo-wordmark-cream.png"
+            src="/logo-wordmark.png"
             alt="Onward Physical Therapy & Pilates"
-            width={160}
-            height={48}
-            className="h-[36px] w-auto lg:h-[42px]"
+            width={100}
+            height={28}
+            className="h-[28px] w-auto"
           />
         </Link>
 
