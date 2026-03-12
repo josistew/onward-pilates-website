@@ -192,19 +192,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div 
-        className={`absolute bottom-8 left-1/2 z-20 -translate-x-1/2 transition-all duration-700 delay-1100 ${
-          loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
-        }`}
-      >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-[9px] font-semibold tracking-[0.3em] text-[#948277]">
-            SCROLL
-          </span>
-          <div className="h-8 w-px bg-[#948277]/40 animate-pulse" />
-        </div>
-      </div>
     </section>
   )
 }
