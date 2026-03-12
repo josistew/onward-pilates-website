@@ -29,9 +29,9 @@ const services = [
   },
   {
     title: "Clinical Pilates",
-    subtitle: "PRIVATE SESSIONS | STOTT PILATES (MERRITHEW)",
+    subtitle: "PRIVATE SESSIONS | STOTT PILATES",
     description:
-      "Once you've been evaluated and cleared, or if you're looking for guided strength and movement work without a medical concern, Clinical Pilates sessions are available as standalone private sessions. These are still one-on-one with Channing, not a group class.",
+      "Pilates sessions are available for those that don't need Physical Therapy services. Channing will start with a full body assessment, then craft a personalized movement plan tailored for your needs.",
     details: [
       "Private Reformer-based sessions",
       "Customized to your level, body, and goals",
