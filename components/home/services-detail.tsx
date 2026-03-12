@@ -6,7 +6,7 @@ const services = [
     title: "Physical Therapy",
     subtitle: "ONE-ON-ONE | CASH-BASED | NO REFERRAL NEEDED",
     description:
-      "Every patient starts here. Your first session is a comprehensive physical therapy evaluation — Channing will assess how you move, identify what's causing your pain or limitations, and build a treatment plan around your specific goals. This is not a group class or a generic stretching session.",
+      "Every patient starts here. Your first session is a comprehensive physical therapy evaluation. Channing will assess how you move, identify what's causing your pain or limitations, and build a treatment plan around your specific goals. This is not a group class or a generic stretching session.",
     details: [
       "Full movement assessment & evaluation",
       "Manual therapy & hands-on treatment",
@@ -31,7 +31,7 @@ const services = [
     title: "Clinical Pilates",
     subtitle: "PRIVATE SESSIONS | STOTT PILATES (MERRITHEW)",
     description:
-      "Once you've been evaluated and cleared, or if you're looking for guided strength and movement work without a medical concern, Clinical Pilates sessions are available as standalone private sessions. These are still one-on-one with Channing — not a group class.",
+      "Once you've been evaluated and cleared, or if you're looking for guided strength and movement work without a medical concern, Clinical Pilates sessions are available as standalone private sessions. These are still one-on-one with Channing, not a group class.",
     details: [
       "Private Reformer-based sessions",
       "Customized to your level, body, and goals",
@@ -65,7 +65,7 @@ export function ServicesDetail() {
           </h2>
           <div className="mt-4 h-px w-16 bg-accent" />
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Every session is one-on-one with Channing — a licensed Doctor of Physical Therapy.
+            Every session is one-on-one with Channing, a licensed Doctor of Physical Therapy.
             No aides, no group classes, no rushing.
           </p>
         </div>

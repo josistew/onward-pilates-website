@@ -6,13 +6,13 @@ const steps = [
     number: "01",
     title: "Book Your Evaluation",
     description:
-      "Your first visit is a full physical therapy evaluation — not a Pilates class. Channing will assess your movement, discuss your history, and understand your goals. No referral needed for your first 30 days.",
+      "Your first visit is a full physical therapy evaluation, not a Pilates class. Channing will assess your movement, discuss your history, and understand your goals. No referral needed for your first 30 days.",
   },
   {
     number: "02",
     title: "Get Your Personalized Plan",
     description:
-      "Based on your evaluation, Channing builds a treatment plan tailored to your body, your goals, and your life. This may include manual therapy, therapeutic exercises, and Clinical Pilates on the Reformer — all as part of your PT care.",
+      "Based on your evaluation, Channing builds a treatment plan tailored to your body, your goals, and your life. This may include manual therapy, therapeutic exercises, and Clinical Pilates on the Reformer, all as part of your PT care.",
   },
   {
     number: "03",
@@ -38,7 +38,7 @@ export function HowItWorks() {
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Onward is a <strong className="font-semibold text-primary">cash-based physical therapy practice</strong> that
             uses Clinical Pilates as one of many treatment tools. Your first appointment is a comprehensive evaluation
-            with a licensed Doctor of Physical Therapy — and every session after is built around your personalized care plan.
+            with a licensed Doctor of Physical Therapy, and every session after is built around your personalized care plan.
           </p>
         </div>
 
