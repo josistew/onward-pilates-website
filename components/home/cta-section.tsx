@@ -3,19 +3,8 @@ import { JANE_APP_URL } from "@/lib/constants"
 
 export function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-[#13273F] py-24 lg:py-32">
-      {/* Subtle background image */}
-      <div className="absolute inset-0 opacity-15">
-        <Image
-          src="/images/cta-pilates-exercise.jpg"
-          alt=""
-          fill
-          className="object-contain object-center lg:object-cover lg:object-[center_30%]"
-          quality={50}
-        />
-      </div>
-
-      <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center lg:px-8">
+    <section className="bg-[#13273F] py-24 lg:py-32">
+      <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center lg:px-8">
         <Image
           src="/images/logo-oval-navy.png"
           alt="Onward PT & Pilates"
