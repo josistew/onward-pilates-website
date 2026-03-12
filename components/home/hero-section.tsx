@@ -104,7 +104,7 @@ export function HeroSection() {
               rel="noopener noreferrer"
               className="group relative overflow-hidden bg-[#13273F] px-8 py-4 text-[11px] font-semibold tracking-[0.2em] text-[#F5F2EC] transition-all duration-300 hover:shadow-[0_12px_40px_-8px_rgba(19,39,63,0.35)]"
             >
-              <span className="relative z-10">BOOK EVALUATION</span>
+              <span className="relative z-10">LET'S GET MOVING</span>
               <div className="absolute inset-0 bg-[#1d3654] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </a>
             <Link
