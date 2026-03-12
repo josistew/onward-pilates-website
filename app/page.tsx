@@ -14,8 +14,8 @@ export default function Page() {
     <main>
       <Navigation />
       <HeroSection />
-      <HowItWorks />
       <ServicesDetail />
+      <HowItWorks />
       <PhilosophySection />
       <AboutSection />
       <QuizSection />
