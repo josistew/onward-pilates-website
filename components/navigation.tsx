@@ -36,18 +36,17 @@ export function Navigation() {
           <Image
             src={scrolled || isOpen ? "/images/logo-oval-navy.png" : "/images/logo-oval-cream.png"}
             alt="Onward PT & Pilates"
-            width={36}
-            height={50}
-            className="h-[42px] w-auto"
+            height={44}
+            width={44}
+            style={{ height: '44px', width: 'auto', display: 'block' }}
           />
-          <div className="flex flex-col items-start">
-            <span className={`font-serif text-xl tracking-[0.05em] lg:text-2xl transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`} style={{ fontWeight: 50 }}>
-              ONWARD
-            </span>
-            <span className={`font-sans text-[6px] font-medium tracking-[0.15em] lg:text-[7px] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70" : "text-[#13273F]/50"}`}>
-              PHYSICAL THERAPY & PILATES
-            </span>
-          </div>
+          <Image
+            src="/logo-wordmark.png"
+            alt="Onward Physical Therapy & Pilates"
+            height={32}
+            width={150}
+            style={{ height: '32px', width: 'auto', display: 'block' }}
+          />
         </Link>
 
         {/* Desktop Navigation */}
