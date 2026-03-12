@@ -5,12 +5,12 @@ export function CTASection() {
   return (
     <section className="relative overflow-hidden bg-[#13273F] py-24 lg:py-32">
       {/* Subtle background image */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-15">
         <Image
-          src="/images/channing-standing.jpg"
+          src="/images/cta-pilates-exercise.jpg"
           alt=""
           fill
-          className="object-cover object-top"
+          className="object-cover object-center"
           quality={50}
         />
       </div>
