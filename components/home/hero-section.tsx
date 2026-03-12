@@ -39,10 +39,10 @@ export function HeroSection() {
       </div>
 
       {/* Main content wrapper */}
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1800px] flex-col px-6 pt-24 pb-16 md:px-10 md:pt-28 lg:flex-row lg:items-stretch lg:gap-0 lg:px-0 lg:pt-0 lg:pb-0">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1800px] flex-row items-stretch gap-0 px-4 pt-28 pb-16 sm:px-6 md:px-10 md:pt-32 lg:px-0 lg:pt-24 lg:pb-0">
         
         {/* Left column - Typography & Content */}
-        <div className="flex flex-col justify-center lg:w-[55%] lg:py-32 lg:pl-[8%] lg:pr-16 xl:pr-24">
+        <div className="flex w-[55%] flex-col justify-center sm:w-[50%] lg:w-[55%] lg:py-32 lg:pl-[8%] lg:pr-16 xl:pr-24">
           
           {/* Eyebrow */}
           <div
@@ -56,7 +56,7 @@ export function HeroSection() {
           </div>
 
           {/* Main headline - stacked editorial style */}
-          <div className="mt-6 md:mt-8">
+          <div className="mt-4 md:mt-6">
             <h1
               className={`font-serif font-normal leading-[0.88] tracking-[-0.03em] text-[#13273F] transition-all duration-1000 delay-300 ${
                 loaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
@@ -64,14 +64,14 @@ export function HeroSection() {
             >
               <span 
                 className="block"
-                style={{ fontSize: 'clamp(3.8rem, 10vw, 9rem)' }}
+                style={{ fontSize: 'clamp(2.2rem, 6vw, 6rem)' }}
               >
                 Move
               </span>
               <span 
                 className="block italic text-[#948277]"
                 style={{ 
-                  fontSize: 'clamp(3.8rem, 10vw, 9rem)',
+                  fontSize: 'clamp(2.2rem, 6vw, 6rem)',
                   marginTop: '-0.08em'
                 }}
               >
@@ -150,16 +150,16 @@ export function HeroSection() {
         </div>
 
         {/* Right column - Photo composition */}
-        <div className="relative mt-12 lg:mt-0 lg:w-[45%]">
+        <div className="relative w-[45%] sm:w-[50%] lg:w-[45%]">
           {/* Photo container with intentional asymmetry */}
           <div 
-            className={`relative h-[500px] md:h-[600px] lg:h-full transition-all duration-1200 delay-400 ${
+            className={`relative h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] transition-all duration-1200 delay-400 ${
               loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
             {/* Main image - bleeds to edge on desktop */}
             <div 
-              className="absolute inset-0 lg:left-8 lg:right-0 lg:top-0 lg:bottom-0 overflow-hidden"
+              className="absolute inset-0 overflow-hidden lg:left-8 lg:right-0 lg:top-20 lg:bottom-0"
               style={{ transform: `translateY(${scrollY}px)` }}
             >
               <div className="relative h-full w-full">
