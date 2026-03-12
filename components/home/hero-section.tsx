@@ -86,9 +86,9 @@ export function HeroSection() {
               loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             }`}
           >
-            <div className="mt-2.5 h-px w-10 bg-[#D4CD5E] flex-shrink-0" />
+            <div className="mt-2 h-px w-12 bg-[#D4CD5E] flex-shrink-0 md:mt-3 md:w-16" />
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.25em] text-[#D4CD5E]">
+              <p className="text-sm font-semibold tracking-[0.2em] text-[#D4CD5E] md:text-base lg:text-lg">
                 PHYSICAL THERAPY & CLINICAL PILATES
               </p>
             </div>
