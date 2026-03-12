@@ -45,10 +45,10 @@ export function Navigation() {
             <Image
               src="/logo-wordmark.png"
               alt="Onward Physical Therapy & Pilates"
-              height={28}
-              width={216}
+              height={40}
+              width={309}
               quality={100}
-              style={{ height: '28px', width: 'auto', display: 'block' }}
+              style={{ height: '40px', width: 'auto', display: 'block' }}
             />
           </div>
         </Link>
