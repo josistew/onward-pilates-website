@@ -29,7 +29,7 @@ export function PhilosophySection() {
             <div className="h-px w-16 bg-[#D4CD5E]" />
             <p className="text-base leading-relaxed text-[#BFCED7]">
               Channing is a licensed Doctor of Physical Therapy and trained STOTT Pilates instructor.
-              She brings a unique blend of clinical expertise and movement-based care to every session —
+              She brings a unique blend of clinical expertise and movement-based care to every session,
               treating the whole person, not just the diagnosis.
             </p>
             <p className="text-base leading-relaxed text-[#BFCED7]">
@@ -38,7 +38,7 @@ export function PhilosophySection() {
               for helping people move without pain or limitation.
             </p>
             <p className="text-base leading-relaxed text-[#BFCED7]">
-              Every session is fully one-on-one, unhurried, and built around you — your body, your goals,
+              Every session is fully one-on-one, unhurried, and built around you: your body, your goals,
               your timeline. No insurance-driven time constraints. No shared appointments.
               Just focused, personalized care.
             </p>

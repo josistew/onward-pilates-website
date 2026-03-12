@@ -16,14 +16,14 @@ export function AboutSection() {
               </h2>
               <div className="h-px w-16 bg-accent" />
               <p className="text-base leading-relaxed text-muted-foreground">
-                Most PT clinics run on high volume — you see a therapist for 10 minutes,
+                Most PT clinics run on high volume. You see a therapist for 10 minutes,
                 then get handed off to an aide. At Onward, you get Channing for your
                 <strong className="font-semibold text-primary"> entire session</strong>, every time.
               </p>
               <p className="text-base leading-relaxed text-muted-foreground">
                 As a cash-based practice, Onward isn&apos;t bound by insurance-driven time limits or
                 treatment restrictions. That means longer sessions, focused attention, and a treatment
-                plan built around what you actually need — not what an insurance company approves.
+                plan built around what you actually need, not what an insurance company approves.
               </p>
               <p className="text-base leading-relaxed text-muted-foreground">
                 Channing blends evidence-based rehabilitation with her training in STOTT Pilates,
@@ -80,12 +80,12 @@ export function AboutSection() {
               {
                 title: "One-on-One Focus",
                 description:
-                  "No shared appointments, no aides, no distractions. Your session is entirely dedicated to you — Channing's full attention, every minute.",
+                  "No shared appointments, no aides, no distractions. Your session is entirely dedicated to you with Channing's full attention, every minute.",
               },
               {
                 title: "Movement-Based Healing",
                 description:
-                  "Combining evidence-based physical therapy with Clinical Pilates to address the root cause — not just the symptoms — and build lasting strength.",
+                  "Combining evidence-based physical therapy with Clinical Pilates to address the root cause, not just the symptoms, and build lasting strength.",
               },
             ].map((value) => (
               <div
@@ -113,8 +113,8 @@ export function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-square overflow-hidden rounded-xl">
                 <Image
-                  src="/images/stability-chair.jpg"
-                  alt="Merrithew Stability Chair"
+                  src="/images/breathing-exercise.jpg"
+                  alt="Breathing and posture awareness exercise"
                   fill
                   className="object-cover"
                   quality={80}
@@ -171,7 +171,7 @@ export function AboutSection() {
                   },
                   {
                     credential: "STOTT Pilates Trained",
-                    detail: "Merrithew — Reformer, Cadillac, Stability Chair, Matwork",
+                    detail: "Merrithew: Reformer, Cadillac, Stability Chair, Matwork",
                   },
                   {
                     credential: "Licensed Physical Therapist",
