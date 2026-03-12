@@ -164,8 +164,8 @@ export function HeroSection() {
             >
               <div className="relative h-full w-full">
                 <Image
-                  src="/images/channing-standing.jpg"
-                  alt="Channing Stewart, Doctor of Physical Therapy, in her Lubbock studio"
+                  src="/images/channing-hero.jpg"
+                  alt="Channing Stewart, Doctor of Physical Therapy, with Pilates equipment in her Lubbock studio"
                   fill
                   className="object-cover object-top"
                   priority
