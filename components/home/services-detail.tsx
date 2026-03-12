@@ -130,14 +130,16 @@ export function ServicesDetail() {
                   </ul>
                 </div>
 
-                <a
-                  href={JANE_APP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block bg-[#13273F] px-8 py-4 text-xs font-semibold tracking-[0.15em] text-[#F5F2EC] transition-all hover:bg-[#1d3654] hover:shadow-md"
-                >
-                  {service.buttonText}
-                </a>
+                <div className="mt-4">
+                  <a
+                    href={JANE_APP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#13273F] px-6 py-3.5 text-[11px] font-semibold tracking-[0.15em] text-[#F5F2EC] transition-all hover:bg-[#1d3654] hover:shadow-md"
+                  >
+                    {service.buttonText}
+                  </a>
+                </div>
               </div>
             </div>
           ))}
