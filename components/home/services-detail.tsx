@@ -33,6 +33,7 @@ const services = [
     description:
       "Pilates sessions are available for those that don't need Physical Therapy services. Channing will start with a full body assessment, then craft a personalized movement plan tailored for your needs.",
     details: [
+      "Posture analysis",
       "Private Reformer-based sessions",
       "Customized to your level, body, and goals",
       "Core strength, alignment, and functional movement",
