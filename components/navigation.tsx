@@ -1,18 +1,19 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { JANE_APP_URL } from "@/lib/constants"
 
 const navLinks = [
   { href: "/", label: "HOME" },
-  { href: "/#services", label: "SERVICES" },
-  { href: "/#about", label: "ABOUT" },
-  { href: "/contact", label: "CONTACT" },
+  { href: "#how-it-works", label: "HOW IT WORKS" },
+  { href: "#services", label: "SERVICES" },
+  { href: "#about", label: "ABOUT" },
 ]
 
-export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }) {
+export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -22,29 +23,31 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const useDark = variant === "dark" && !scrolled && !isOpen
-  const textColor = useDark ? "text-[#13273F]" : "text-[#F5F2EC]"
-  const textMuted = useDark ? "text-[#13273F]/60" : "text-[#F5F2EC]/80"
-  const lineColor = useDark ? "bg-[#13273F]/30" : "bg-[#F5F2EC]/40"
-  const subtextColor = useDark ? "text-[#13273F]" : "text-[#F5F2EC]/80"
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isOpen
-          ? "bg-[#13273F] shadow-md"
-          : "bg-transparent"
+          ? "bg-[#13273F]/95 shadow-md backdrop-blur-sm"
+          : "bg-[#F5F2EC]/80 backdrop-blur-sm"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex flex-col items-center gap-0.5">
-          <span className={`font-serif text-3xl tracking-[0.05em] ${textColor} lg:text-4xl`} style={{ fontWeight: 50 }}>
-            ONWARD
-          </span>
-          <span className={`h-px w-3/4 ${lineColor}`} />
-          <span className={`mt-1 font-sans text-[7px] font-medium tracking-[0.15em] ${textColor} lg:text-[8px]`}>
-            PHYSICAL THERAPY & PILATES
-          </span>
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src={scrolled || isOpen ? "/images/logo-oval-navy.png" : "/images/logo-oval-cream.png"}
+            alt="Onward PT & Pilates"
+            width={36}
+            height={50}
+            className="h-[42px] w-auto"
+          />
+          <div className="flex flex-col items-start">
+            <span className={`font-serif text-xl tracking-[0.05em] lg:text-2xl transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`} style={{ fontWeight: 50 }}>
+              ONWARD
+            </span>
+            <span className={`font-sans text-[6px] font-medium tracking-[0.15em] lg:text-[7px] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70" : "text-[#13273F]/50"}`}>
+              PHYSICAL THERAPY & PILATES
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -53,7 +56,7 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
             <Link
               key={link.href}
               href={link.href}
-              className={`text-xs font-semibold tracking-[0.2em] ${textMuted} transition-colors hover:${textColor}`}
+              className={`text-xs font-semibold tracking-[0.2em] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70 hover:text-[#F5F2EC]" : "text-[#13273F]/60 hover:text-[#13273F]"}`}
             >
               {link.label}
             </Link>
@@ -64,14 +67,14 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
             rel="noopener noreferrer"
             className="rounded-full bg-[#D4CD5E] px-6 py-2.5 text-xs font-semibold tracking-[0.2em] text-[#13273F] transition-all hover:bg-[#c5be50] hover:shadow-md"
           >
-            LET'S GET MOVING!
+            BOOK NOW
           </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className={`${textColor} md:hidden`}
+          className={`md:hidden transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
@@ -100,7 +103,7 @@ export function Navigation({ variant = "light" }: { variant?: "light" | "dark" }
               className="rounded-full bg-[#D4CD5E] px-8 py-3 text-xs font-semibold tracking-[0.2em] text-[#13273F]"
               onClick={() => setIsOpen(false)}
             >
-              LET'S GET MOVING!
+              BOOK NOW
             </a>
           </div>
         </div>

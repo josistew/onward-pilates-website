@@ -1,8 +1,10 @@
+import Image from "next/image"
+
 export function AboutSection() {
   return (
     <>
-      {/* Channing's Approach */}
-      <section id="about" className="bg-secondary/20 py-24 lg:py-32">
+      {/* Approach + Studio Photos */}
+      <section id="about" className="bg-background py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="flex flex-col gap-6">
@@ -14,20 +16,41 @@ export function AboutSection() {
               </h2>
               <div className="h-px w-16 bg-accent" />
               <p className="text-base leading-relaxed text-muted-foreground">
-                Channing has a background in the inpatient rehab neuro setting as well as the ortho world, having played collegiate volleyball. Her love for physical therapy and Pilates came from overcoming 3 ACL injuries and rehabilitations.
+                Most PT clinics run on high volume — you see a therapist for 10 minutes,
+                then get handed off to an aide. At Onward, you get Channing for your
+                <strong className="font-semibold text-primary"> entire session</strong>, every time.
               </p>
               <p className="text-base leading-relaxed text-muted-foreground">
-                Through her practice, she blends evidence-based rehabilitation, her training in STOTT Pilates, her athletic background, and years of working with the neuro population to create treatment plans tailored to each client&apos;s goals, lifestyle, and needs.
+                As a cash-based practice, Onward isn&apos;t bound by insurance-driven time limits or
+                treatment restrictions. That means longer sessions, focused attention, and a treatment
+                plan built around what you actually need — not what an insurance company approves.
               </p>
               <p className="text-base leading-relaxed text-muted-foreground">
-                She is passionate about providing Spirit-led, high-quality, and personalized physical therapy without the constraints of insurance-driven care, allowing for longer sessions, focused attention, and collaborative goal setting.
+                Channing blends evidence-based rehabilitation with her training in STOTT Pilates,
+                her athletic background, and years of working with both orthopedic and neurological
+                patients. The result is care that&apos;s thorough, personalized, and Spirit-led.
               </p>
             </div>
 
-            {/* Photo placeholder */}
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-[#BFCED7]">
-              <div className="flex h-full items-center justify-center text-primary/30">
-                <span className="text-lg tracking-widest">Studio Photo</span>
+            {/* Photo mosaic */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
+                <Image
+                  src="/images/channing-equipment.jpg"
+                  alt="Channing surrounded by Pilates equipment"
+                  fill
+                  className="object-cover"
+                  quality={80}
+                />
+              </div>
+              <div className="relative mt-8 aspect-[3/4] overflow-hidden rounded-xl">
+                <Image
+                  src="/images/studio-cadillac.jpg"
+                  alt="The Onward studio with Cadillac Pilates equipment"
+                  fill
+                  className="object-cover"
+                  quality={80}
+                />
               </div>
             </div>
           </div>
@@ -35,7 +58,7 @@ export function AboutSection() {
       </section>
 
       {/* Values */}
-      <section className="bg-background py-24 lg:py-32">
+      <section className="bg-[#E5D0CF]/20 py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-16 flex flex-col items-center text-center">
             <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground">
@@ -57,17 +80,17 @@ export function AboutSection() {
               {
                 title: "One-on-One Focus",
                 description:
-                  "No shared appointments, no distractions. Your session is entirely dedicated to you, with personalized attention every step of the way.",
+                  "No shared appointments, no aides, no distractions. Your session is entirely dedicated to you — Channing's full attention, every minute.",
               },
               {
                 title: "Movement-Based Healing",
                 description:
-                  "Combining evidence-based physical therapy with Pilates-informed principles to address the root cause and build lasting strength.",
+                  "Combining evidence-based physical therapy with Clinical Pilates to address the root cause — not just the symptoms — and build lasting strength.",
               },
             ].map((value) => (
               <div
                 key={value.title}
-                className="flex flex-col gap-4 rounded-lg bg-card p-8"
+                className="flex flex-col gap-4 rounded-2xl bg-card p-8 shadow-sm"
               >
                 <h3 className="font-serif text-xl font-medium text-primary">
                   {value.title}
@@ -82,31 +105,89 @@ export function AboutSection() {
         </div>
       </section>
 
-      {/* Credentials */}
-      <section className="bg-muted/40 py-24 lg:py-32">
-        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground">
-            CREDENTIALS
-          </p>
-          <h2 className="mt-4 font-serif text-4xl font-light tracking-wide text-primary md:text-5xl">
-            Education & Training
-          </h2>
-          <div className="mx-auto mt-4 h-px w-16 bg-accent" />
-
-          <div className="mt-12 flex flex-col gap-6">
-            {[
-              "Doctorate of Physical Therapy, Texas Tech Health Sciences Center, 2021",
-              "B.S. Exercise Science, Lubbock Christian University, 2018",
-              "STOTT Pilates Trained, Merrithew",
-              "Licensed Physical Therapist, State of Texas",
-            ].map((credential) => (
-              <div
-                key={credential}
-                className="border-b border-border pb-4 text-base text-muted-foreground"
-              >
-                {credential}
+      {/* Credentials + Equipment photos */}
+      <section className="bg-background py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid items-center gap-16 lg:grid-cols-2">
+            {/* Equipment photos */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-square overflow-hidden rounded-xl">
+                <Image
+                  src="/images/stability-chair.jpg"
+                  alt="Merrithew Stability Chair"
+                  fill
+                  className="object-cover"
+                  quality={80}
+                />
               </div>
-            ))}
+              <div className="relative aspect-square overflow-hidden rounded-xl">
+                <Image
+                  src="/images/reformer-closeup.jpg"
+                  alt="Reformer session close-up"
+                  fill
+                  className="object-cover"
+                  quality={80}
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-xl">
+                <Image
+                  src="/images/equipment-flatlay.jpg"
+                  alt="Merrithew Pilates equipment"
+                  fill
+                  className="object-cover"
+                  quality={80}
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-xl">
+                <Image
+                  src="/images/balance-work.jpg"
+                  alt="Balance and stability training"
+                  fill
+                  className="object-cover"
+                  quality={80}
+                />
+              </div>
+            </div>
+
+            {/* Credentials */}
+            <div className="flex flex-col gap-6">
+              <p className="text-xs font-semibold tracking-[0.3em] text-muted-foreground">
+                CREDENTIALS
+              </p>
+              <h2 className="font-serif text-4xl font-light tracking-wide text-primary md:text-5xl">
+                Education & Training
+              </h2>
+              <div className="h-px w-16 bg-accent" />
+
+              <div className="mt-4 flex flex-col gap-6">
+                {[
+                  {
+                    credential: "Doctorate of Physical Therapy",
+                    detail: "Texas Tech University Health Sciences Center, 2021",
+                  },
+                  {
+                    credential: "B.S. Exercise Science",
+                    detail: "Lubbock Christian University, 2018",
+                  },
+                  {
+                    credential: "STOTT Pilates Trained",
+                    detail: "Merrithew — Reformer, Cadillac, Stability Chair, Matwork",
+                  },
+                  {
+                    credential: "Licensed Physical Therapist",
+                    detail: "State of Texas",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.credential}
+                    className="border-b border-border pb-4"
+                  >
+                    <p className="font-serif text-lg text-primary">{item.credential}</p>
+                    <p className="mt-1 text-sm text-muted-foreground">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

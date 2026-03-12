@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Instagram } from "lucide-react"
 import { JANE_APP_URL, INSTAGRAM_URL, CONTACT_INFO } from "@/lib/constants"
 
@@ -9,13 +10,22 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col items-start gap-0">
-              <span className="font-serif text-2xl tracking-[0.05em] text-primary-foreground" style={{ fontWeight: 100 }}>
-                ONWARD
-              </span>
-              <span className="font-sans text-[7px] font-normal tracking-[0.15em] text-primary-foreground">
-                PHYSICAL THERAPY & PILATES
-              </span>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo-oval-navy.png"
+                alt="Onward PT & Pilates"
+                width={32}
+                height={45}
+                className="h-[40px] w-auto"
+              />
+              <div className="flex flex-col items-start">
+                <span className="font-serif text-xl tracking-[0.05em] text-primary-foreground" style={{ fontWeight: 100 }}>
+                  ONWARD
+                </span>
+                <span className="font-sans text-[6px] font-normal tracking-[0.15em] text-primary-foreground/70">
+                  PHYSICAL THERAPY & PILATES
+                </span>
+              </div>
             </div>
             <p className="text-sm italic text-primary-foreground/60">
               Helping you move forward, one session at a time.
@@ -39,14 +49,14 @@ export function Footer() {
               <Link href="/" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
                 Home
               </Link>
-              <Link href="/#services" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
+              <Link href="#how-it-works" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
+                How It Works
+              </Link>
+              <Link href="#services" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
                 Services
               </Link>
-              <Link href="/#about" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
+              <Link href="#about" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
                 About
-              </Link>
-              <Link href="/contact" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
-                Contact
               </Link>
               <a href={JANE_APP_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/60 transition-colors hover:text-primary-foreground">
                 Book Online
