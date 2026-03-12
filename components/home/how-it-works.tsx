@@ -77,8 +77,8 @@ export function HowItWorks() {
           {/* Image */}
           <div className="relative aspect-[3/4] max-h-[600px] overflow-hidden rounded-2xl">
             <Image
-              src="/images/pilates-legs-up.jpg"
-              alt="Clinical Pilates exercise demonstration"
+              src="/images/pilates-ball-exercise.jpg"
+              alt="Clinical Pilates exercise with stability ball"
               fill
               className="object-cover object-center"
               quality={85}
