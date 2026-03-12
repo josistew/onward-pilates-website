@@ -135,7 +135,7 @@ export function HeroSection() {
                   Channing Stewart
                 </p>
                 <p className="mt-0.5 text-[10px] tracking-[0.02em] text-[#948277]">
-                  PT, DPT &bull; STOTT Pilates Certified
+                  PT, DPT &bull; STOTT Pilates Trained
                 </p>
               </div>
             </div>
