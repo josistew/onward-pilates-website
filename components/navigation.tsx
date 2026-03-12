@@ -31,20 +31,20 @@ export function Navigation() {
           : "bg-[#F5F2EC]/80 backdrop-blur-sm"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
-        <Link href="/" className="flex items-center gap-2.5">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8 lg:py-5">
+        <Link href="/" className="flex items-center gap-3 lg:gap-4">
           <Image
             src={scrolled || isOpen ? "/images/logo-pill-white.png" : "/images/logo-pill-navy.png"}
             alt="Onward PT & Pilates"
-            width={32}
-            height={48}
-            className="h-[38px] w-auto lg:h-[42px]"
+            width={48}
+            height={72}
+            className="h-[52px] w-auto lg:h-[60px]"
           />
           <div className="flex flex-col items-start">
-            <span className={`font-serif text-lg tracking-[0.06em] lg:text-xl transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`}>
+            <span className={`font-serif text-2xl tracking-[0.04em] lg:text-3xl transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]" : "text-[#13273F]"}`}>
               ONWARD
             </span>
-            <span className={`font-sans text-[6px] font-medium tracking-[0.12em] lg:text-[7px] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70" : "text-[#13273F]/60"}`}>
+            <span className={`font-sans text-[8px] font-medium tracking-[0.12em] lg:text-[9px] transition-colors duration-300 ${scrolled || isOpen ? "text-[#F5F2EC]/70" : "text-[#13273F]/60"}`}>
               PHYSICAL THERAPY & PILATES
             </span>
           </div>
