@@ -63,15 +63,13 @@ export function HeroSection() {
               }`}
             >
               <span 
-                className="block"
-                style={{ fontSize: 'clamp(2.2rem, 6vw, 6rem)' }}
+                className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
               >
                 Move
               </span>
               <span 
-                className="block italic text-[#948277]"
+                className="block italic text-[#948277] text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
                 style={{ 
-                  fontSize: 'clamp(2.2rem, 6vw, 6rem)',
                   marginTop: '-0.08em'
                 }}
               >
