@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { ArrowRight } from "lucide-react"
 import { JANE_APP_URL } from "@/lib/constants"
 
 const services = [
@@ -26,6 +25,7 @@ const services = [
     image: "/images/pt-resistance-band.jpg",
     imageAlt: "Physical therapy session with resistance band",
     color: "bg-[#BFCED7]",
+    buttonText: "BOOK PHYSICAL THERAPY SESSION",
   },
   {
     title: "Clinical Pilates",
@@ -48,6 +48,7 @@ const services = [
     image: "/images/reformer-session.jpg",
     imageAlt: "Clinical Pilates session on the Reformer",
     color: "bg-[#E5D0CF]",
+    buttonText: "BOOK A CLINICAL PILATES SESSION",
   },
 ]
 
@@ -133,10 +134,9 @@ export function ServicesDetail() {
                   href={JANE_APP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-primary transition-colors hover:text-muted-foreground"
+                  className="mt-4 inline-block rounded-full bg-[#13273F] px-6 py-3 text-xs font-semibold tracking-[0.15em] text-[#F5F2EC] transition-all hover:bg-[#1d3654] hover:shadow-md"
                 >
-                  BOOK NOW
-                  <ArrowRight className="h-3 w-3" />
+                  {service.buttonText}
                 </a>
               </div>
             </div>
